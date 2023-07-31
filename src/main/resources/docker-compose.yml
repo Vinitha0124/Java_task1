@@ -1,0 +1,15 @@
+version: "3"
+services:
+  vinithadb:
+    image: mongo:latest
+    container_name: "vinithadb"
+    ports:
+      - 27017:27017
+  demo.0.0.1:
+    image: demo-0.0.1
+    container_name: "demo.0.0.1"
+    ports:
+      - 8080:8080
+    links:
+      - vinithadb
+

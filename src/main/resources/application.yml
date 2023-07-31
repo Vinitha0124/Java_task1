@@ -1,0 +1,6 @@
+spring:
+  data:
+    mongodb:
+      database: student_details
+      host: vinithadb
+      port: 27017
